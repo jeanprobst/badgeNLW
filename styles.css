@@ -28,7 +28,7 @@ body {
 }
 
 main {
-  background: url(/assets/svg/background.svg);
+  background: url(assets/svg/background.svg);
   width: 375px;
   height: 812px;
 }
@@ -132,7 +132,7 @@ ul {
 @media screen and (min-width: 600px) {
   body {
     background: hsl(240, 6%, 8%);
-    background-image: url(/assets/svg/desktop-bg.svg);
+    background-image: url(assets/svg/desktop-bg.svg);
     background-repeat: no-repeat;
   }
 
@@ -143,7 +143,7 @@ ul {
   }
 
   main {
-    background: url(/assets/photos/background2.png);
+    background: url(assets/photos/background2.png);
     width: 358px;
     height: 540px;
   }
