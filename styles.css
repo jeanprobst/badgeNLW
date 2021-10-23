@@ -28,9 +28,10 @@ body {
 }
 
 main {
-  background: url(assets/svg/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(assets/svg/background.svg) no-repeat center/cover;
+  width: 100vw;
+  height: 100vw;
+  min-height: 812px;
 }
 
 .crestholder {
@@ -143,7 +144,8 @@ ul {
   }
 
   main {
-    background: url(assets/photos/background2.png);
+    margin-top: 4rem;
+    background: url(assets/photos/background2.png) no-repeat;
     width: 358px;
     height: 540px;
   }
