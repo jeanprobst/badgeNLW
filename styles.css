@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+}
+
+/* VARIABLES */
+
+:root {
+  --font-title: 700 'Roboto', sans-serif;
+  --font-body: 400 'Roboto', sans-serif;
+
+  --color-font-1: hsla(204, 9%, 89%, 1);
+  --color-font-2: hsla(240, 7%, 78%, 1);
+}
+
+/* BASE */
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(/assets/svg/background.svg);
+  width: 375px;
+  height: 812px;
+}
+
+.crestholder {
+  margin-top: -600px;
+}
+
+.container {
+  margin-top: 183px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  font-style: var(--font-body);
+  font-size: 0.875rem;
+
+  color: var(--color-font-1);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+/* img.stamp {} */
+
+img.profile-picture {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.link {
+  /* margin-top: 0.25rem; */
+  height: 1rem;
+  width: 102px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link a {
+  height: 1rem;
+}
+
+.link a img {
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+}
+
+.link a img span {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-style: var(--font-body);
+
+  color: var(--color-font-2);
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: hsl(240, 6%, 8%);
+    background-image: url(/assets/svg/desktop-bg.svg);
+    background-repeat: no-repeat;
+  }
+
+  .crestholder {
+    position: absolute;
+    margin-top: -630px;
+    z-index: 2;
+  }
+
+  main {
+    background: url(/assets/photos/background2.png);
+    width: 358px;
+    height: 540px;
+  }
+
+  .container {
+    margin-top: 72px;
+  }
+
+  .avatar {
+    margin: 4.5rem auto 0;
+  }
+}
